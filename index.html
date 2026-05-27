@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience adrenaline-packed Go Karting, premium Cricket Turf, and relaxing Café & Lounge all in one luxury motorsports entertainment venue.">
+  <meta name="keywords" content="Go Karting, Cricket Turf, Café Lounge, F1 Racing, Sports complex, Gaming Lounge, Hadapsar, Pune">
+  <meta name="author" content="Apex Entertainment">
+  <title>Apex Arena | Premium Go Karting, Cricket Turf & Café</title>
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Design System -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FLOATING WIDGETS -->
+  <a href="#booking" class="floating-booking-btn" id="floatingBooking">
+    <i class="fa-solid fa-flag-checkered"></i> Book Session
+  </a>
+  <a href="https://wa.me/919876543210" target="_blank" class="floating-whatsapp" id="floatingWhatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- LIGHTBOX MODAL (Gallery Previews) -->
+  <div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="closeLightbox" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="Enlarged gallery view" class="lightbox-img" id="lightboxImg">
+    </div>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="navLogo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="logo-text">APEX<span>ARENA</span></div>
+      </a>
+      
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="#hero">Home</a></li>
+          <li class="nav-item"><a href="#karting">Go Karting</a></li>
+          <li class="nav-item"><a href="#turf">Cricket Turf</a></li>
+          <li class="nav-item"><a href="#cafe">Café & Lounge</a></li>
+          <li class="nav-item"><a href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#booking" class="btn btn-secondary btn-sm">Book Slot</a>
+      </div>
+      
+      <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+ <!-- 1. HERO SECTION -->
+<section class="hero" id="hero">
+
+  <div class="hero-image-wrapper">
+
+    <!-- VIDEO -->
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="stock-footage-la-linea-spain-point-of-view-man-driving-a-kart-outdoor-at-sunset-racers-driving.mp4" type="video/mp4">
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="hero-overlay"></div>
+
+  </div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+
+    <span class="hero-tagline">
+      Go-Karting & Sports Hub
+    </span>
+
+    <h1 class="hero-title">
+      RACE YOUR FRIENDS.
+      <span>FEEL THE THRILL.</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Premium Go-Karting Track, Professional Cricket Turf &
+      Modern Café Lounge Experience.
+    </p>
+
+    <div class="hero-ctas">
+
+      <a href="#booking" class="btn btn-primary">
+        <i class="fa-solid fa-flag-checkered"></i>
+        Book Karting
+      </a>
+
+      <a href="#turf" class="btn btn-secondary">
+        <i class="fa-solid fa-baseball-bat-ball"></i>
+        Explore Turf
+      </a>
+
+      <a href="#cafe" class="btn btn-secondary">
+        <i class="fa-solid fa-mug-saucer"></i>
+        Visit Café
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- 2. ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="radial-bg top-left"></div>
+    <div class="checkered-accent checkered-top"></div>
+    
+    <div class="container about-grid">
+      <div class="about-content">
+        <span class="section-subtitle">Who We Are</span>
+        <h2 class="section-title">THE ULTIMATE ARENA</h2>
+        <div class="about-highlight">
+          “Experience adrenaline-packed racing, competitive cricket action, and relaxing café vibes — all in one premium space.”
+        </div>
+        <p>APEX ARENA is the ultimate social hub for friends, families, and team outings. Spanning over 3 acres, our custom-built outdoor karting track features professional timing transponders, while our premium floodlit sports turfs are designed for high-performance cricket matches. Top it off at the modern pit stop café, serving artisanal drinks and gourmet food with views overlooking the entire karting track.</p>
+        
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="1.2">0</span>
+            <span class="stat-label">KM Kart Track</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Cricket Turfs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="45">0</span>
+            <span class="stat-label">Gourmet Bites</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="25">0</span>
+            <span class="stat-label">K+ Happy Racers</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-visual">
+        <img src="gettyimages-157187457-612x612.jpg" alt="Premium Go-Kart steering wheel and helmet closeup" class="about-img">
+        <div class="about-overlay-text">
+          <span class="about-overlay-tag">KARTING ARENA</span>
+          <p class="text-muted font-tech">100% REAL KART DRIVING</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="checkered-accent checkered-bottom"></div>
+  </section>
+
+  <!-- 3. SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Multi-Activity Hub</span>
+        <h2 class="section-title">CHOOSE YOUR ARENA</h2>
+        <p class="section-desc">From tight karting corners to high-intensity turf play and a relaxed lounge dining experience.</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1: Go Karting -->
+        <div class="service-card">
+          <div class="service-bg" style="background-image: url('a-man-riding-a-go-kart-at-night-photo.jpg');"></div>
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <div class="service-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+            <h3>GO KARTING</h3>
+            <p class="service-desc">Conquer tricky hairpins and drift round corners on our go-kart track with electronic timing.</p>
+            <a href="" class="service-btn">Explore Speedway <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Service 2: Cricket Turf -->
+        <div class="service-card">
+          <div class="service-bg" style="background-image: url('box-cricket-turf-UKr9cJhH.png');"></div>
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <div class="service-icon"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+            <h3>CRICKET TURF</h3>
+            <p class="service-desc">Professional shock-absorption pitch layers under premium night floodlights for intense matches.</p>
+            <a href="#turf" class="service-btn">Explore Pitch <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Service 3: Café Lounge -->
+        <div class="service-card">
+          <div class="service-bg" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200');"></div>
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <div class="service-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+            <h3>CAFÉ & LOUNGE</h3>
+            <p class="service-desc">Relax with artisanal coffees, signature shakes, and mouthwatering burgers with front-row track views.</p>
+            <a href="#cafe" class="service-btn">Explore Lounge <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. KARTING EXPERIENCE SECTION -->
+  <section class="karting-experience" id="karting">
+    <div class="radial-bg bottom-right"></div>
+    <div class="container karting-grid">
+      
+      <!-- Interactive Speedometer Dashboard -->
+      <div class="dashboard-visual">
+        <div class="speedometer-container">
+          <div class="speed-gauge">
+            <svg class="gauge-svg" viewBox="0 0 220 220">
+              <circle class="gauge-track" cx="110" cy="110" r="100"></circle>
+              <circle class="gauge-glow" id="speedGlow" cx="110" cy="110" r="100"></circle>
+              <circle class="gauge-fill" id="speedFill" cx="110" cy="110" r="100"></circle>
+            </svg>
+            <div class="speed-digital">
+              <span class="speed-number" id="speedNum">0</span>
+              <span class="speed-unit">KM/H</span>
+            </div>
+            <div class="gauge-labels">
+              <span>0</span>
+              <span>120</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="dashboard-metrics">
+          <div class="metric-box">
+            <label>Current Lap</label>
+            <span class="metric-value font-tech text-red" id="lapVal">00:00.00</span>
+          </div>
+          <div class="metric-box">
+            <label>Best Lap</label>
+            <span class="metric-value font-tech">00:44.28</span>
+          </div>
+          <div class="metric-box">
+            <label>G-Force</label>
+            <span class="metric-value font-tech" id="gForceVal">1.2 G</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content Copy -->
+      <div class="karting-text-content">
+        <span class="section-subtitle">Real-time Kart Dashboard</span>
+        <h2 class="section-title">THE GO-KART EXPERIENCE</h2>
+        <p class="text-muted">Grab your helmet, jump into a 270cc drift kart, and fly down the straights with your friends. Our tracks feature precise lap timers and digital scoreboard integrations. With full safety gear, professional helmets, and shock-absorbent safety barriers, you can drift through corners and chase the best time safely.</p>
+        
+        <ul class="experience-highlights">
+          <li>
+            <i class="fa-solid fa-microchip"></i>
+            <div>
+              <h4>Live Timing Board</h4>
+              <p>Track your lap time to the millisecond and see how you rank against your friends.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <h4>Helmets & Pro Safety Gear</h4>
+              <p>Fully equipped with certified crash helmets, neck guards, and elastic barrier buffers.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-crown"></i>
+            <div>
+              <h4>Monthly Kart League</h4>
+              <p>Set the fastest lap of the month and win free rides, pizza combos, and custom merchandise!</p>
+            </div>
+          </li>
+        </ul>
+        
+        <a href="#booking" class="btn btn-primary"><i class="fa-solid fa-flag-checkered"></i> Book Karting Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CRICKET TURF SECTION -->
+  <section class="cricket-turf" id="turf">
+    <div class="container turf-grid">
+      <div class="turf-content">
+        <span class="section-subtitle">The Playing Field</span>
+        <h2 class="section-title">PREMIUM SPORTS TURF</h2>
+        <p class="text-muted">Step onto an elite playing pitch designed with top-tier artificial grass fibers and premium shock-absorption backing. Our multisport turf reduces joint stress and gives predictable ball-bounce dynamics, creating the ultimate arena for both casual friendlies and major local tournaments.</p>
+        
+        <div class="turf-features">
+          <div class="feature-pill">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Professional Floodlights</span>
+          </div>
+          <div class="feature-pill">
+            <i class="fa-solid fa-users"></i>
+            <span>Comfortable Pavilion Seating</span>
+          </div>
+          <div class="feature-pill">
+            <i class="fa-solid fa-shower"></i>
+            <span>Premium Locker & Shower Facilities</span>
+          </div>
+          <div class="feature-pill">
+            <i class="fa-solid fa-plug"></i>
+            <span>Live Match Video Recording</span>
+          </div>
+        </div>
+        
+        <div style="margin-top: 3rem;">
+          <a href="#booking" class="btn btn-orange"><i class="fa-solid fa-baseball-bat-ball"></i> Book Turf Slot</a>
+        </div>
+      </div>
+      
+      <div class="turf-visual-wrapper">
+        <img src="cricket-wickets-pitch-green-grass-isolated-white-background-close-up-view-marked-lines-set-against-vibrant-field-420314315.webp" alt="Lush green sports turf pitch closeup" class="turf-img">
+        <div class="turf-overlay-glow"></div>
+        <div class="turf-floodlight-badge">
+          <span></span> FLOODLIGHTS ACTIVE
+        </div>
+        <div class="turf-dimensions">
+          <span class="font-tech text-orange">120 ft x 80 ft</span>
+          <label>Arena Dimensions</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CAFÉ SECTION -->
+  <section class="cafe" id="cafe">
+    <div class="container cafe-grid">
+      <div class="cafe-menu-grid">
+        
+        <!-- Menu Item 1 -->
+        <div class="cafe-item">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600" alt="Nitro Cold Brew Glass Coffee" class="cafe-item-img">
+          <div class="cafe-item-info">
+            <div class="cafe-item-header">
+              <span class="cafe-item-title text-orange">Nitro Cold Brew</span>
+              <span class="cafe-item-price">Rs600</span>
+            </div>
+            <p class="cafe-item-desc">Infused with nitrogen for a smooth, velvety finish and a premium espresso kick.</p>
+          </div>
+        </div>
+        
+        <!-- Menu Item 2 -->
+        <div class="cafe-item">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600" alt="Gourmet Smash Burger and Fries" class="cafe-item-img">
+          <div class="cafe-item-info">
+            <div class="cafe-item-header">
+              <span class="cafe-item-title text-orange">Apex Double Smash</span>
+              <span class="cafe-item-price">Rs1250</span>
+            </div>
+            <p class="cafe-item-desc">Double smashed Angus beef patties, molten cheddar cheese, and house secret burger sauce.</p>
+          </div>
+        </div>
+        
+        <!-- Menu Item 3 -->
+        <div class="cafe-item">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=600" alt="Artisanal Pizza directly out of oven" class="cafe-item-img">
+          <div class="cafe-item-info">
+            <div class="cafe-item-header">
+              <span class="cafe-item-title text-orange">Woodfired Truffle Pizza</span>
+              <span class="cafe-item-price">Rs1400</span>
+            </div>
+            <p class="cafe-item-desc">Wild woodland mushrooms, buffalo mozzarella, and a drizzle of rich white truffle oil.</p>
+          </div>
+        </div>
+        
+        <!-- Menu Item 4 -->
+        <div class="cafe-item">
+          <img src="Salted-Caramel-Milkshake-4.jpg" alt="Smooth Caramel Milkshake with whipped cream" class="cafe-item-img">
+          <div class="cafe-item-info">
+            <div class="cafe-item-header">
+              <span class="cafe-item-title text-orange">Salted Caramel Shake</span>
+              <span class="cafe-item-price">Rs750</span>
+            </div>
+            <p class="cafe-item-desc">Creamy premium vanilla bean gelato blended with rich house-crafted sea salted caramel.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="cafe-text-content">
+        <span class="section-subtitle">Café & Lounge</span>
+        <h2 class="section-title">THE PIT STOP CAFÉ</h2>
+        <p class="text-muted">Take a break at our premium pit stop café and gaming lounge. Watch live sports on giant screens or peer out of the panoramic windows directly onto the karting track corners. Fuel up on gourmet snacks, craft coffee brews, and full entrees prepared by specialized chefs.</p>
+        <p class="text-muted" style="margin-top: 1.5rem; margin-bottom: 2.5rem;">Our comfortable leather booths and ambient gaming lights make it the perfect lounge for weekend hangouts with friends, family gatherings, or competitive match analysis sessions.</p>
+        <a href="#booking" class="btn btn-orange"><i class="fa-solid fa-utensils"></i> Reserve Lounge Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PRICING SECTION -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Straightforward Rates</span>
+        <h2 class="section-title">MEMBERSHIP & PRICING</h2>
+        <p class="section-desc">Premium experiences designed for everyday athletes and casual thrill-seekers alike.</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- Card 1: Karting -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>RACER RIDE</h3>
+            <span class="pricing-subtitle">Single Track Run</span>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Rs</span>
+            <span class="amount">250</span>
+            <span class="duration">/ 10 Mins</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-circle-check"></i> Standard Go Kart (270cc)</li>
+            <li><i class="fa-solid fa-circle-check"></i> Helmet & Race Suit</li>
+            <li><i class="fa-solid fa-circle-check"></i> Electronic Lap Reports</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> High-Speed Kart Access</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Championship Entry</li>
+          </ul>
+          <a href="#booking" class="btn btn-secondary">Select Option</a>
+        </div>
+        
+        <!-- Card 2: Turf (Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>TURF SESSION</h3>
+            <span class="pricing-subtitle">Group Pitch Booking</span>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Rs</span>
+            <span class="amount">400</span>
+            <span class="duration">/ Hour</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-circle-check"></i> 120x80 Professional Turf</li>
+            <li><i class="fa-solid fa-circle-check"></i> Premium Night Floodlights</li>
+            <li><i class="fa-solid fa-circle-check"></i> Changing Rooms & Showers</li>
+            <li><i class="fa-solid fa-circle-check"></i> Basic Sports Gear Included</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Full Video Recording</li>
+          </ul>
+          <a href="#booking" class="btn btn-primary">Select Option</a>
+        </div>
+        
+        <!-- Card 3: Café Combo -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>APEX PASS</h3>
+            <span class="pricing-subtitle">All Access Package</span>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">RS</span>
+            <span class="amount">750</span>
+            <span class="duration">/ Day Pass</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-circle-check"></i> 2x 10-Min Karting Rides</li>
+            <li><i class="fa-solid fa-circle-check"></i> 1 Hour Shared Turf Play</li>
+            <li><i class="fa-solid fa-circle-check"></i> 1x Burger + Shake Combo</li>
+            <li><i class="fa-solid fa-circle-check"></i> Live Speed Metrix Trace</li>
+            <li><i class="fa-solid fa-circle-check"></i> Priority Leaderboard</li>
+          </ul>
+          <a href="#booking" class="btn btn-secondary">Select Option</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. GALLERY SECTION -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Visual Tour</span>
+        <h2 class="section-title">THE ARENA GALLERY</h2>
+        <p class="section-desc">A snapshot of pure energy, high-velocity drift curves, competitive runs, and chill food scenes.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <!-- Item 1 (Tall) -->
+        <div class="gallery-item tall" data-src="/drifting imaage.jpg">
+          <img src="images.jpeg" alt="Go-Kart Racing on Arena Circuit" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Go Karting</span>
+            <h4 class="gallery-title">Drifting Through Hairpins</h4>
+          </div>
+        </div>
+        
+        <!-- Item 2 (Wide) -->
+        <div class="gallery-item wide" data-src="https://images.unsplash.com/photo-1531415080290-bc98545ab2ef?q=80&w=1200">
+          <img src="led-sports-floodlighting-for-turf-ground.jpeg" alt="Beautiful Cricket Pitch Stadium view" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Cricket Turf</span>
+            <h4 class="gallery-title">Tournament Finals Under Lights</h4>
+          </div>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800" alt="Modern café interior" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Café Lounge</span>
+            <h4 class="gallery-title">Pit Stop Chill Lounge</h4>
+          </div>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800" alt="Freshly brewed latte art" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Café Lounge</span>
+            <h4 class="gallery-title">Artisanal Coffee Pouring</h4>
+          </div>
+        </div>
+        
+        <!-- Item 5 (Wide) -->
+        <div class="gallery-item wide" data-src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1200">
+          <img src="training.jpg" alt="Vibrant soccer pitch grass lines" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Sports Turf</span>
+            <h4 class="gallery-title">Night Game Warm-Up</h4>
+          </div>
+        </div>
+        
+        <!-- Item 6 -->
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?q=80&w=800">
+          <img src="speed-6777159_1280-1024x680.webp" alt="Go kart safety helmets details" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Go Karting</span>
+            <h4 class="gallery-title">Safety Helmets & Gear</h4>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. TESTIMONIALS SECTION -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Real Drivers & Athletes</span>
+        <h2 class="section-title">THE LEADERBOARD BUZZ</h2>
+        <p class="section-desc">What our regular speedway drivers and cricket tournament players have to say about us.</p>
+      </div>
+      
+      <div class="carousel-container">
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+        
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">“Absolutely world class go-kart track! The transponder timings are extremely precise and competitive. The kart responsive power blew me away. Coming here every weekend with my racing mates now!”</p>
+              <div class="testimonial-author">
+                <span class="author-name">Alex Reynolds</span>
+                <span class="author-role">Weekend Karting Fanatic</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">“The cricket turf bounce quality is superb. The lighting is completely even, which is highly rare for night sports turfs. Plus, hanging out in the pit stop café after the game is such a huge upgrade!”</p>
+              <div class="testimonial-author">
+                <span class="author-name">Vikram Malhotra</span>
+                <span class="author-role">Sunday League Captain</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">“Their Double Smash burgers and Nitro Cold Brews match the best premium burger joints in town. It is so immersive to watch karts fly around the tracks directly from your table. Highly recommended!”</p>
+              <div class="testimonial-author">
+                <span class="author-name">Sarah Jenkins</span>
+                <span class="author-role">Food & Lifestyle Blogger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-btn next" id="carouselNext" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+        
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. BOOKING SECTION -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Realtime Scheduler</span>
+        <h2 class="section-title">SECURE YOUR SLOT</h2>
+        <p class="section-desc">Select your date, choose your sport arena, and lock in your session instantly.</p>
+      </div>
+      
+      <div class="booking-wrapper">
+        <div class="booking-steps">
+          <div class="step-indicator active" id="stepIndicator1">
+            <span class="step-num">1</span>
+            <span class="step-text">Choose Sport</span>
+          </div>
+          <div class="step-indicator" id="stepIndicator2">
+            <span class="step-num">2</span>
+            <span class="step-text">Pick Date/Time</span>
+          </div>
+          <div class="step-indicator" id="stepIndicator3">
+            <span class="step-num">3</span>
+            <span class="step-text">Confirm Booking</span>
+          </div>
+        </div>
+        
+        <div class="booking-panel glass-card">
+          <!-- Left Form Area -->
+          <form class="booking-form-area" id="bookingForm" onsubmit="event.preventDefault();">
+            
+            <!-- Step 1 Content: Sport Selection -->
+            <div class="form-group">
+              <label>Select Activity</label>
+              <div class="activity-options">
+                <button type="button" class="activity-select-btn selected" data-activity="Karting" data-price="25">
+                  <i class="fa-solid fa-flag-checkered" style="display:block; margin-bottom: 0.5rem; font-size: 1.2rem;"></i>
+                  Go Karting
+                </button>
+                <button type="button" class="activity-select-btn" data-activity="Cricket Turf" data-price="40">
+                  <i class="fa-solid fa-baseball-bat-ball" style="display:block; margin-bottom: 0.5rem; font-size: 1.2rem;"></i>
+                  Cricket Turf
+                </button>
+                <button type="button" class="activity-select-btn" data-activity="Café Lounge" data-price="0">
+                  <i class="fa-solid fa-mug-saucer" style="display:block; margin-bottom: 0.5rem; font-size: 1.2rem;"></i>
+                  Café Lounge
+                </button>
+              </div>
+            </div>
+            
+            <!-- Step 2 Content: Date and Slots Selection -->
+            <div class="date-slots-grid">
+              <div class="form-group">
+                <label for="bookingDate">Select Date</label>
+                <div class="date-picker-custom">
+                  <input type="date" id="bookingDate" class="date-picker-input">
+                </div>
+              </div>
+              
+              <div class="form-group slots-container">
+                <label>Available Slots</label>
+                <div class="slots-grid" id="slotsGrid">
+                  <!-- JS generated slot chips -->
+                  <div class="slot-chip selected" data-time="10:00 AM">10:00 AM</div>
+                  <div class="slot-chip" data-time="11:30 AM">11:30 AM</div>
+                  <div class="slot-chip disabled" data-time="01:00 PM">01:00 PM</div>
+                  <div class="slot-chip" data-time="02:30 PM">02:30 PM</div>
+                  <div class="slot-chip" data-time="04:00 PM">04:00 PM</div>
+                  <div class="slot-chip" data-time="06:00 PM">06:00 PM</div>
+                  <div class="slot-chip" data-time="08:00 PM">08:00 PM</div>
+                  <div class="slot-chip" data-time="09:30 PM">09:30 PM</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 Content: Personal Details -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookingName">Your Name</label>
+                <input type="text" id="bookingName" class="booking-input" placeholder="e.g. Alex Mercer" required>
+              </div>
+              <div class="form-group">
+                <label for="bookingPhone">Phone Number</label>
+                <input type="tel" id="bookingPhone" class="booking-input" placeholder="e.g. +91 1234567819" required>
+              </div>
+            </div>
+            
+          </form>
+          
+          <!-- Right Receipt Sidebar -->
+          <div class="booking-summary-card">
+            <h3 class="summary-title">Booking Summary</h3>
+            <div class="summary-details">
+              <div class="summary-row">
+                <label>Sport Arena:</label>
+                <span id="summaryActivity">Go Karting</span>
+              </div>
+              <div class="summary-row">
+                <label>Selected Date:</label>
+                <span id="summaryDate">Choose Date...</span>
+              </div>
+              <div class="summary-row">
+                <label>Time Slot:</label>
+                <span id="summaryTime">10:00 AM</span>
+              </div>
+              <div class="summary-row">
+                <label>Price Rate:</label>
+                <span id="summaryRate">250Rs / Session</span>
+              </div>
+              
+              <div class="summary-row summary-total">
+                <label>Total Price:</label>
+                <span id="summaryTotal">250RS</span>
+              </div>
+            </div>
+            
+            <button type="submit" form="bookingForm" class="btn btn-primary w-100" id="btnSubmitBooking" style="width: 100%;">
+              <i class="fa-solid fa-circle-check"></i> Lock Booking
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form-area">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">COMMUNICATION RADAR</h2>
+        <p class="text-muted" style="margin-bottom: 3rem;">Ready to host a corporate karting event, birthday match party, or rent the entire cricket pitch? Shoot us a request below and our team will trace back in 12 hours.</p>
+        
+        <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" class="booking-input" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" class="booking-input" placeholder="Your Email" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" class="booking-input" placeholder="e.g. Birthday Event Booking" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" class="contact-textarea" placeholder="How can we help you?" required></textarea>
+          </div>
+          
+          <div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Contact Info Sidebar -->
+      <div class="contact-info-panel">
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-info-content">
+              <label>Location Coordinates</label>
+              <span>xyz</span>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-info-content">
+              <label>Voice Dispatch</label>
+              <a href="tel:+">xyz</a>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info-content">
+              <label>Electronic Mail</label>
+              <a href="mailto:race@apexarena.in">race@apexarena.in</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <!-- Customized Dark Styled Google Map Embed (Hadapsar Pune location representation) -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.56847424683!2d73.91617267597143!3d18.503254969707168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1f4e56eb6ab%3A0x6a19f2010bf4c86e!2sHadapsar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1714500000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <label class="font-tech text-muted" style="font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase;">Social Dispatches</label>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter Feed"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-btn" aria-label="YouTube Channel"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copyright">
+        &copy; 2026 APEX ARENA. Designed for Maximum Adrenaline. All rights reserved.
+      </div>
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#karting">Go Karting</a></li>
+        <li><a href="#turf">Cricket Turf</a></li>
+        <li><a href="#cafe">Café & Lounge</a></li>
+        <li><a href="#booking">Book Now</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- CORE SCRIPTS: GSAP + Custom Interactive Controller -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
